@@ -44,8 +44,8 @@ We conducted a deep static performance check on all assets to analyze loading sp
 ### 1. Asset Sizes Audit
 | Asset | Current Size | Status | Impact / Optimization Strategy |
 |---|---|---|---|
-| `images/hero-bg.png` | **2.40 MB** | 🔴 Critical | Very slow loading on mobile/slow connections. Needs compression/WebP. |
-| `images/custom-bg.png` | **1.20 MB** | 🔴 Critical | Large background image. Needs compression/WebP. |
+| `images/hero-bg.webp` | **149 KB** | 🟢 Good | Optimal. Compressed from 2.40 MB PNG (94% savings). |
+| `images/custom-bg.webp` | **93 KB** | 🟢 Good | Optimal. Compressed from 1.20 MB PNG (92% savings). |
 | `images/feature-2.png` | **254 KB** | 🟡 Warning | Heavy asset. Compress using Squoosh. |
 | `images/feature-3.png` | **236 KB** | 🟡 Warning | Heavy asset. Compress using Squoosh. |
 | `images/feature-1.png` | **39 KB** | 🟢 Good | Acceptable file size. |
@@ -55,9 +55,8 @@ We conducted a deep static performance check on all assets to analyze loading sp
 
 ### 2. Actionable Optimization Recommendations
 To boost your performance score above **95+** on mobile and desktop:
-* **Convert Background Images**: Upload `hero-bg.png` and `custom-bg.png` to a free online tool like [Squoosh.app](https://squoosh.app/) or [TinyPNG](https://tinypng.com/) and convert them to `.webp` or highly compressed `.jpg`.
-* **Expected Savings**: Converting to WebP will reduce the total website size from **~4.2 MB** down to **~600 KB** (an **85% reduction** in loading time!).
-* **Update References**: Once optimized, update references in `index.html` (e.g. change `hero-bg.png` to `hero-bg.webp` in your CSS background or HTML image paths).
+* **Background Images Optimized**: Background images `hero-bg.png` and `custom-bg.png` have been successfully converted to `.webp` format and compressed. This reduced their sizes from **3.60 MB** down to **242 KB** combined (a **~93% size reduction**), dramatically improving page load times.
+* **Feature Images (Optional)**: `feature-2.png` (254 KB) and `feature-3.png` (236 KB) can be compressed further using [Squoosh.app](https://squoosh.app/) to save an additional ~350 KB if needed.
 
 ---
 
@@ -70,6 +69,6 @@ You can easily run and preview the project as follows:
 
 ## Known Issues (Postponed)
 - **Forms are not connected to a server**: The forms on the page (such as the contact or subscription form) are static and do not send data to any backend server. Connecting them has been postponed until the backend is developed.
-- **Performance Optimization**: Advanced compression strategies for background images have not yet been fully applied (see recommendations in the Performance Audit section).
+- **Performance Optimization**: Background images have been fully optimized. Further optimization can be applied to feature images (`feature-2.png` and `feature-3.png`) using compression tools.
 - **Mobile Responsiveness**: The site needs further refinement to adapt better and more smoothly to mobile screens.
 - **Sidebar / Mobile Menu**: The mobile-specific sidebar appears but contains no navigation links inside; it requires adding and styling the links.
