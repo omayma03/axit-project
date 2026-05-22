@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 #hero {
-    background: url('../images/hero-bg.png') no-repeat center center/cover;
+    background: url('../images/hero-bg.webp') no-repeat center center/cover;
     height: 100vh;
     min-height: 650px;
     color: white;
@@ -305,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Custom CTA Section */
 .custom-cta-section {
-    background: url('../images/custom-bg.png') no-repeat center center/cover;
+    background: url('../images/custom-bg.webp') no-repeat center center/cover;
     position: relative;
 }
 
