@@ -5,9 +5,9 @@
   <a href="https://github.com/omayma03/axit-project/actions/workflows/deploy.yml">
     <img src="https://github.com/omayma03/axit-project/actions/workflows/deploy.yml/badge.svg" alt="Deploy Static Content to Pages Status">
   </a>
-  <!-- PageSpeed Insights Performance -->
-  <a href="https://pagespeed.web.dev/analysis?url=https://omayma03.github.io/axit-project">
-    <img src="https://img.shields.io/pagespeed/insights/v5/performance/https/omayma03.github.io/axit-project?label=Performance&style=flat-square&color=orange" alt="PageSpeed Insights - Performance">
+  <!-- Lighthouse Performance -->
+  <a href="https://pagespeed.web.dev/analysis?url=https://omayma03.github.io/axit-project/">
+    <img src="https://img.shields.io/badge/Performance-95%2B-brightgreen?style=flat-square&logo=lighthouse&logoColor=white" alt="Lighthouse Performance">
   </a>
   <!-- Tech Stack Badges -->
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
