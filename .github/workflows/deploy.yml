@@ -26,10 +26,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: HTMLHint Validation
-        uses: htmlhint/action-htmlhint@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          addresses: 'index.html'
+          node-version: '20'
+
+      - name: HTMLHint Validation
+        run: npx htmlhint index.html
 
   # Deployment Job (only on push to main branch)
   deploy:
