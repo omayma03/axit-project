@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: HTMLHint Validation
-        uses: htmlhint/htmlhint-action@v2
+        uses: htmlhint/action-htmlhint@v2
         with:
           addresses: 'index.html'
 
